@@ -1,0 +1,73 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle grid pattern -->
+  <rect width="500" height="300" fill="#f9fafc"/>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e8eaed" stroke-width="1"/>
+  </pattern>
+  <rect width="500" height="300" fill="url(#grid)"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC" />
+      <stop offset="100%" stop-color="#0099FF" />
+    </linearGradient>
+    <linearGradient id="gradient-secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6600" />
+      <stop offset="100%" stop-color="#FF9933" />
+    </linearGradient>
+    <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CC0000" />
+      <stop offset="100%" stop-color="#FF3333" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Document stack -->
+  <g transform="translate(150, 50)">
+    <!-- Document 3 (bottom) -->
+    <rect x="10" y="10" width="180" height="220" rx="5" ry="5" fill="#ffffff" stroke="#e6e9f0" stroke-width="2"/>
+    <!-- Document 2 (middle) -->
+    <rect x="5" y="5" width="180" height="220" rx="5" ry="5" fill="#ffffff" stroke="#e6e9f0" stroke-width="2"/>
+    <!-- Document 1 (top) -->
+    <rect x="0" y="0" width="180" height="220" rx="5" ry="5" fill="#ffffff" stroke="#0066CC" stroke-width="2"/>
+    
+    <!-- Document content -->
+    <rect x="20" y="20" width="140" height="10" rx="2" ry="2" fill="#0066CC"/>
+    <rect x="20" y="40" width="120" height="5" rx="2" ry="2" fill="#e6e9f0"/>
+    <rect x="20" y="55" width="140" height="5" rx="2" ry="2" fill="#e6e9f0"/>
+    <rect x="20" y="70" width="130" height="5" rx="2" ry="2" fill="#e6e9f0"/>
+    
+    <!-- Document image placeholder -->
+    <rect x="20" y="90" width="140" height="80" rx="2" ry="2" fill="url(#gradient-primary)" opacity="0.2"/>
+    <path d="M90 130 L110 110 L130 140 L50 140 L70 120 Z" fill="url(#gradient-primary)"/>
+    <circle cx="120" cy="105" r="10" fill="url(#gradient-secondary)"/>
+    
+    <!-- Document footer -->
+    <rect x="20" y="180" width="80" height="5" rx="2" ry="2" fill="#e6e9f0"/>
+    <rect x="20" y="195" width="60" height="5" rx="2" ry="2" fill="#e6e9f0"/>
+  </g>
+  
+  <!-- Printer -->
+  <g transform="translate(320, 150)">
+    <!-- Printer body -->
+    <rect x="0" y="0" width="120" height="60" rx="5" ry="5" fill="#2A2A2A"/>
+    <!-- Printer tray -->
+    <rect x="10" y="50" width="100" height="10" rx="2" ry="2" fill="#1A1A1A"/>
+    <!-- Printer output -->
+    <rect x="-20" y="30" width="20" height="30" fill="#1A1A1A"/>
+    <rect x="-30" y="40" width="30" height="5" fill="#ffffff"/>
+    <!-- Printer buttons -->
+    <circle cx="100" cy="20" r="5" fill="url(#gradient-accent)"/>
+    <rect x="80" y="17" width="10" height="6" rx="3" ry="3" fill="#ffffff"/>
+    <!-- Printer display -->
+    <rect x="20" y="15" width="50" height="15" rx="2" ry="2" fill="#333333"/>
+    <rect x="25" y="20" width="40" height="5" rx="1" ry="1" fill="#0099FF" opacity="0.7"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M240 120 C 270 120, 270 150, 290 150" stroke="#0066CC" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  
+  <!-- Text labels -->
+  <text x="250" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2A2A2A">Document Printing Services</text>
+  <text x="250" y="50" font-family="Arial, sans-serif" font-size="12" fill="#555555">High-quality prints for all your needs</text>
+</svg>

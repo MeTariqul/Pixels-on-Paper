@@ -1,0 +1,79 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="300" fill="#F9FAFC"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E8EAED" stroke-width="1"/>
+  </pattern>
+  <rect width="500" height="300" fill="url(#grid)" opacity="0.5"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC" />
+      <stop offset="100%" stop-color="#0099FF" />
+    </linearGradient>
+    <linearGradient id="gradient-secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6600" />
+      <stop offset="100%" stop-color="#FF9933" />
+    </linearGradient>
+    <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CC0000" />
+      <stop offset="100%" stop-color="#FF3333" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Photo prints display -->
+  <g transform="translate(50, 50)">
+    <!-- Photo frame 1 -->
+    <rect x="0" y="0" width="120" height="180" fill="#2A2A2A" rx="4" ry="4"/>
+    <rect x="5" y="5" width="110" height="170" fill="url(#gradient-secondary)" opacity="0.3" rx="2" ry="2"/>
+    <rect x="10" y="10" width="100" height="160" fill="#FFFFFF" rx="2" ry="2"/>
+    
+    <!-- Photo content 1 (landscape) -->
+    <rect x="15" y="15" width="90" height="60" fill="url(#gradient-primary)" rx="2" ry="2"/>
+    <circle cx="40" cy="35" r="10" fill="#FFFFFF" opacity="0.7"/>
+    <path d="M 15 60 L 35 45 L 55 55 L 85 30 L 105 60" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Photo content 2 (portrait) -->
+    <rect x="15" y="85" width="90" height="75" fill="url(#gradient-accent)" rx="2" ry="2"/>
+    <rect x="35" y="95" width="50" height="55" fill="#FFFFFF" opacity="0.2" rx="2" ry="2"/>
+    <circle cx="60" cy="115" r="15" fill="#FFFFFF" opacity="0.3"/>
+    <path d="M 50 140 L 60 130 L 70 140" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Photo sizes display -->
+  <g transform="translate(200, 50)">
+    <!-- Size chart -->
+    <rect x="0" y="0" width="250" height="180" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" ry="4"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="250" height="40" fill="url(#gradient-primary)" rx="4" ry="4"/>
+    <text x="125" y="25" font-family="Inter, Arial" font-size="16" fill="white" text-anchor="middle">PHOTO SIZES</text>
+    
+    <!-- Size examples -->
+    <g transform="translate(20, 60)">
+      <!-- Passport size -->
+      <rect x="0" y="0" width="40" height="50" fill="#F0F2F5" stroke="url(#gradient-secondary)" stroke-width="1" rx="2" ry="2"/>
+      <text x="20" y="70" font-family="Inter, Arial" font-size="10" fill="#4A4A4A" text-anchor="middle">Passport</text>
+      
+      <!-- 4R size -->
+      <rect x="60" y="0" width="60" height="45" fill="#F0F2F5" stroke="url(#gradient-secondary)" stroke-width="1" rx="2" ry="2"/>
+      <text x="90" y="70" font-family="Inter, Arial" font-size="10" fill="#4A4A4A" text-anchor="middle">4R</text>
+      
+      <!-- 5R size -->
+      <rect x="140" y="0" width="75" height="50" fill="#F0F2F5" stroke="url(#gradient-secondary)" stroke-width="1" rx="2" ry="2"/>
+      <text x="177" y="70" font-family="Inter, Arial" font-size="10" fill="#4A4A4A" text-anchor="middle">5R</text>
+    </g>
+    
+    <!-- Quality indicators -->
+    <g transform="translate(20, 100)">
+      <rect x="0" y="0" width="210" height="25" fill="url(#gradient-accent)" opacity="0.1" rx="4" ry="4"/>
+      <text x="105" y="17" font-family="Inter, Arial" font-size="12" fill="#2A2A2A" text-anchor="middle">Premium Photo Paper</text>
+      
+      <rect x="0" y="35" width="210" height="25" fill="url(#gradient-primary)" opacity="0.1" rx="4" ry="4"/>
+      <text x="105" y="52" font-family="Inter, Arial" font-size="12" fill="#2A2A2A" text-anchor="middle">High Resolution Printing</text>
+    </g>
+  </g>
+</svg>

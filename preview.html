@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pixels on Paper - Website Preview. Document printing, photo printing, and xerox services.">
+    <title>Pixels on Paper - Preview</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/translate.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+    <style>
+        .preview-links {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+        .preview-link {
+            display: block;
+            padding: var(--spacing-sm);
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: var(--border-radius-md);
+            text-align: center;
+            font-weight: bold;
+            transition: all var(--transition-medium);
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+        .preview-link:hover {
+            background: var(--gradient-secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px var(--shadow-hover);
+        }
+        .description {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background-color: var(--background-accent);
+            border-radius: var(--border-radius-md);
+            border-left: 4px solid var(--secondary-color);
+            box-shadow: 0 2px 4px var(--shadow-color);
+        }
+        .preview-section {
+            padding: var(--spacing-lg) 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pixels on Paper</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products/document-prints.html">Document Prints</a></li>
+                    <li><a href="products/photo-prints.html">Photo Prints</a></li>
+                    <li><a href="products/xerox-services.html">Xerox Services</a></li>
+                    <li><a href="products/online-application.html">Online Application</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="preview-section">
+            <div class="container">
+                <div class="preview-links">
+                    <a href="index.html" class="preview-link">Homepage</a>
+                    <a href="products/document-prints.html" class="preview-link">Document Prints</a>
+                    <a href="products/photo-prints.html" class="preview-link">Photo Prints</a>
+                    <a href="products/xerox-services.html" class="preview-link">Xerox Services</a>
+                    <a href="products/online-application.html" class="preview-link">Online Application</a>
+                    <a href="order.html" class="preview-link">Order Now</a>
+                </div>
+                
+                <div class="description">
+                    <h3>About This Project</h3>
+                    <p>This is a modern, frontend e-commerce website for 'Pixels on Paper'—a print shop specializing in document printing, photo printing, xerox services, and online application assistance.</p>
+                    <p>The website features:</p>
+                    <ul>
+                        <li>Responsive design that works on all devices</li>
+                        <li>Modern orange, blue, and red theme with gradient effects</li>
+                        <li>One-click translation to Bangla language</li>
+                        <li>Smart button interactions with hover animations</li>
+                        <li>Streamlined ordering process with 'Order Now' buttons</li>
+                        <li>Modern UI elements with subtle animations</li>
+                    </ul>
+                    <p>This project is ready for deployment on GitHub Pages.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Pixels on Paper</h2>
+                    <p>Where digital dreams hit the page.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products/document-prints.html">Document Prints</a></li>
+                        <li><a href="products/photo-prints.html">Photo Prints</a></li>
+                        <li><a href="products/xerox-services.html">Xerox Services</a></li>
+                        <li><a href="products/online-application.html">Online Application</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <p><a href="tel:+8801629866954">+880 1629866954</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:pixeonpaper@outlook.com">pixeonpaper@outlook.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61578196073138" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/8801629866954" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Pixels on Paper. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

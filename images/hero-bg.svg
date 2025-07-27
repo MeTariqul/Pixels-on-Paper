@@ -1,0 +1,40 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle pixel texture -->
+  <defs>
+    <pattern id="pixel-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#2A2A2A"/>
+      <rect width="1" height="1" fill="#3A3A3A" x="5" y="5"/>
+      <rect width="1" height="1" fill="#3A3A3A" x="15" y="15"/>
+      <rect width="1" height="1" fill="#3A3A3A" x="5" y="15"/>
+      <rect width="1" height="1" fill="#3A3A3A" x="15" y="5"/>
+    </pattern>
+    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC" />
+      <stop offset="100%" stop-color="#0099FF" />
+    </linearGradient>
+    <linearGradient id="gradient-secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6600" />
+      <stop offset="100%" stop-color="#FF9933" />
+    </linearGradient>
+    <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CC0000" />
+      <stop offset="100%" stop-color="#FF3333" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="400" fill="url(#pixel-pattern)"/>
+  
+  <!-- Abstract paper elements -->
+  <rect x="50" y="50" width="200" height="300" fill="#F9FAFC" opacity="0.1" rx="8" ry="8"/>
+  <rect x="550" y="100" width="200" height="200" fill="#F9FAFC" opacity="0.1" rx="8" ry="8"/>
+  <rect x="300" y="200" width="150" height="150" fill="#F9FAFC" opacity="0.1" rx="8" ry="8"/>
+  
+  <!-- Accent elements -->
+  <circle cx="150" cy="200" r="50" fill="url(#gradient-primary)" opacity="0.3"/>
+  <circle cx="650" cy="200" r="70" fill="url(#gradient-secondary)" opacity="0.3"/>
+  <circle cx="400" cy="100" r="30" fill="url(#gradient-accent)" opacity="0.3"/>
+  
+  <!-- Pixel grid overlay -->
+  <rect width="800" height="400" fill="url(#pixel-pattern)" opacity="0.5"/>
+</svg>
